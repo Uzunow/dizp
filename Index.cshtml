@@ -1,0 +1,18 @@
+﻿@model Sportist
+@{
+    ViewData["Title"] = "Профил на Спортист";
+}
+
+<!-- Хедър банер със снимка -->
+<div style="width: 100%; height: 400px; background: url('@Model.SnimkaUrl') no-repeat center center; background-size: cover;">
+    <div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center;">
+        <h1 style="color: white; font-size: 3rem; text-shadow: 0 0 10px #00f, 0 0 20px #0ff;">@Model.Ime</h1>
+    </div>
+</div>
+
+<!-- Карта с информация -->
+<div style="margin: 30px auto; padding: 20px; width: 70%; border-radius: 15px; background: linear-gradient(135deg, #1e1e1e, #292929); color: white; box-shadow: 0 0 15px rgba(0,255,255,0.4);">
+    <h2 style="color: #0ff; text-shadow: 0 0 5px #0ff;">Информация</h2>
+    <p><strong>Отбор:</strong> @Model.Otbor</p>
+    <p><strong>Позиция:</strong> @Model.Poziciya</p>
+</div>
